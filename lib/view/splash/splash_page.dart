@@ -25,34 +25,15 @@ class _SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           mainAxisSize: MainAxisSize.max,
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: const [
-            Text.rich(
-              TextSpan(
-                text: "Gerenciamento de ",
-                style: TextStyle(color: Colors.black, fontSize: 48),
-                children: [
-                  TextSpan(
-                    text: "Tarefas",
-                    style: TextStyle(color: Colors.red, fontSize: 48),
-                  ),
-                ],
-              ),
-            ),
-            Row(
-              mainAxisSize: MainAxisSize.max,
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                Text("(Estudo de conceitos (setState))",
-                style: TextStyle(color: Colors.black, fontSize: 14),
-                )
-              ],
-            )
+          children:  [
+            Image.asset("assets/images/alfadev-1.png", fit: BoxFit.fitWidth)
           ],
         ),
       ),
@@ -65,7 +46,7 @@ class _SplashPageState extends State<SplashPage> {
           children: [
             const Text(
               "v1.0.0",
-              style: TextStyle(color: Colors.black, fontSize: 14),
+              style: TextStyle(color: Colors.white, fontSize: 14),
             ),
           ],
         ),
